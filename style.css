@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+    
+}
+body{
+    background: #000;
+    color: white;
+    align-items: center;
+}
+.container{
+    text-align: auto;		
+}
+/* Animación de botón al pasar el mouse */
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+/* Transición suave global para scroll */
+html {
+    scroll-behavior: smooth;
+}
+.image-hover:hover {
+    filter: brightness(80%);
+    transform: scale(1.1);
+  }
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+.row, .col{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.text-content{
+    padding: 0 20px;
+    margin-top: 100px;
+}
+.container-card, .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer{
+    background-color: #313131;
+    background:var(rgb(68, 68, 68));
+    text-align: center;
+}
+
+.footer .share{
+    padding:2rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    padding: 15px;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin:.2rem;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border:var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background:var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
+/* NOSOTROS */
+.container-img-principal img{
+    width: 100%;         /* Asegura que el contenedor ocupe el ancho completo de su contenedor padre */
+    height: auto;        /* Altura automática para mantener la proporción de la imagen */
+    background-size: cover;  /* Cubre completamente el contenedor, puede recortar la imagen */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.container-text-principal{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.mission-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.mission-text {
+    width: 100%;
+    margin-bottom: 20px;
+		text-align: center; /* Ajusta este valor según sea necesario */
+}
+.mission-text P{
+	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+.mission-image {
+    width: 48%;/* Ajusta este valor según sea necesario */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.mission-image:hover {
+    transform: scale(1.1);
+}
+.mission-image img {
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+}
+.mission-image:hover img {
+    filter: brightness(30%);
+}
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+}
+.mission-image:hover .centered-text {
+    opacity: 1;
+}
+.container-nuestros-ing{
+	text-align: center;
+}
+.conoce_a_nuestros_ingenieros {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+.ingeniero .nombre-ingeniero {
+	height: 70px; /* Ajusta según sea necesario */
+	overflow: hidden;
+}
+.ingeniero {
+	position: relative;
+	width: 200px;
+	text-align: center;
+	margin: 100px;
+	transition: transform 0.3s;
+}
+.info-ingeniero {
+	font-size: 14px;
+	color: #b3b3b3;
+}
+.ingeniero:hover {
+	transform: scale(1.5); /* Aumenta la escala al pasar el mouse */
+}
+
+.ingeniero img {
+	width: 200px;
+	height: 200px;
+	border: #3ac7e0 solid 2px;
+	border-radius: 50%; /* Máscara circular */
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.nombre-ingeniero {
+	font-weight: bold;
+}
+
+/* Estilo para la tercera imagen */
+.tercera-imagen {
+	align-self: flex-end; /* Alinea la tercera imagen en la parte inferior */
+}
+/*CONTACTO*/
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 80%; 
+    margin: 20px auto; 
+}
+.contact-container, .contact-map {
+    margin-bottom: 40px; /* Adjust the value as needed */
+}
+.contact-map {
+    margin: 20px auto; 
+    width: 80%; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--bs-primary);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+/* Efecto parallax básico para una imagen de fondo */
+.parallax-section {
+    background-image: url('tu-imagen.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+  
+  /* Efecto de revelado al hacer scroll */
+.reveal {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+#testimonios {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+  
+#carouselTestimonios .carousel-inner {
+    display: flex;
+    align-items: center;
+}
+  
+  #carouselTestimonios .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+  }
+  
+  .testimonial-item {
+    text-align: center;
+  }
+  
+  .testimonial-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block; /* Asegura que la imagen sea un bloque para poder centrar con 'mx-auto' */
+    margin-bottom: 20px; /* Espacio entre la imagen y el testimonio */
+  }
+  
+  .blockquote {
+    max-width: 800px;
+    margin: auto;
+  }
+/* media queries  */
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color:var(--black);
+        display: block;
+        margin:1.5rem;
+        padding:.5rem;
+				font-size: 3rem;
+
+    }
+
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .text-content{
+        margin: -2px;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+    .mission-image {
+        width: 100%;
+    }
+    .centered-text {
+        opacity: 1;
+        font-size: 14px; /* Ajusta el tamaño de fuente según sea necesario */
+        top: 40%; /* Ajusta la posición vertical del texto */
+    }
+    .mission-text{ /* Ajusta el tamaño de fuente según sea necesario */
+        text-align: center;
+    }
+    .mission-text p{
+        font-size: 15px;
+        padding: 15px;
+    }
+    .mission-text h1{
+        font-size: 20px;
+    }
+    .mission-image img {
+        filter: brightness(70%); /* Oscurecer imágenes en dispositivos móviles */
+    }
+    .container-text-principal {
+        display: none;
+    }
+	.conoce_a_nuestros_ingenieros {
+			margin: 0;
+	}
+	.ingeniero {
+			margin: 20px;
+			font-size: 20px;
+	}
+    .contact-container {
+        flex-direction: column; /* Los elementos se apilarán verticalmente en pantallas pequeñas */
+    }
+    
+    .contact-form, .contact-map {
+        width: 100%; /* Ambos elementos toman el 100% del ancho disponible en pantallas pequeñas */
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }    
+}
+

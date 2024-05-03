@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="globe-outline.svg">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+          <img src="logo_arriba.png" alt="" width="30" height="24">
+            <a class="navbar-brand" href="index.html">TELECOM NETWORK PERU</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Servicios
+                  </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="servicios.html">Auditoría de Seguridad
+  
+                  </a></li>
+                <li><a class="dropdown-item" href="servicios.html">Protección de Datos
+                  </a></li>
+                <li><a class="dropdown-item" href="servicios.html">Respuesta ante Incidentes
+                  </a></li>
+                <li><a class="dropdown-item" href="servicios.html">Cumplimiento Normativo
+                  </a></li>        
+              </ul>
+                    
+                </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+            </div>
+        </nav>
+    </header>
+				<div class="container">
+          <div class="contact-container">
+              <div class="col-md-6">
+                  <h2 class="text-center mb-4">!Contactanos!</h2>
+                  <form action="submit_form.php" method="post">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="number" class="form-label">Celular:</label>
+                        <input type="number" class="form-control" id="Celular" name="celular" placeholder="Ingresa tu Celular" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu Email" required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="message" name="message" rows="3" placeholder="Ingresa tu Mensaje" required></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="contact-map">
+              <iframe
+                style="width: 100%; height: 450px; border:0;"
+                src="https://www.google.com/maps?q=-9.116946535732277,-78.51619054347455&hl=es;z=14&output=embed"
+                allowfullscreen>
+              </iframe>
+          </div>
+      </div>
+    </main>
+    <section class="footer">
+      <div class="share">
+          <a href="#" class="fab fa-facebook-f"><img src="facebook (4).png" alt=""></a>
+          <a href="#" class="fab fa-twitter"><img src="gorjeo.png" alt=""></a>
+          <a href="#" class="fab fa-instagram"><img src="instagram.png" alt=""></a>
+      </div>
+      <div class="links">
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="servicios.html">Servicios</a>
+      </div>
+      <div class="credit"><span style="font-size: large;">Telecom Network Perú | Derechos Reservados</div>
+    </section>
+</body>
+</html>
